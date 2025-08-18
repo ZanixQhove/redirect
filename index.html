@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=https://9362006.xyz" />
+    <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <script>
-      location.href = "https://9362006.xyz";
+      const url = new URL("https://9362006.xyz/");
+      url.searchParams.set("utm_source", "ZanixRedirect");
+      url.searchParams.set("utm_medium", "organic");
+      url.searchParams.set("utm_campaign", "entry");
+
+      location.replace(url.toString());
     </script>
   </head>
   <body>
-    <p>
-      Redirecting to
-      <a href="https://9362006.xyz">9362006.xyz</a>...
-    </p>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=https://9362006.xyz?utm_source=ZanixRedirect&utm_medium=organic&utm_campaign=entry" />
+      <p>Redirecting to <a href="https://9362006.xyz">9362006.xyz</a>...</p>
+    </noscript>
   </body>
 </html>
